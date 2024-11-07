@@ -1,0 +1,10 @@
+#page1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/gradiant.svg");
+    background-position: top;
+    background-size: right;
+}
+
+
