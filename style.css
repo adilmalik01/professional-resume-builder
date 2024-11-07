@@ -5,67 +5,90 @@
     padding: 0;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     background-color: rgb(191, 186, 195);
-    font-family: "Open Sans", sans-serif;
-    position: relative !important;
-    transition: all 0.4s;
     width: 100%;
-}
-
-
-nav .links {
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-nav .links h3 {
-    cursor: pointer;
+    position: relative;
+    transition: all 0.4s;
 }
 
 nav .logo {
     padding: 0px 20px;
 }
 
-.hidden {
-    display: none;
+nav .links {
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
 }
 
-.hamburger {
+nav .links h3 {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hamburger,
+.close {
     font-size: 30px;
     padding: 0 10px;
+    cursor: pointer;
     font-weight: 800;
 }
 
-@media (max-width:720px) {
-    .hidden {
-        display: flex !important;
-    }
+.hamburger, .close {
+    display: none;
+}
 
+.links h3 a{
+    text-decoration: none;
+    color: #000;
+}
 
-    .hide {
-        display: none !important;
-    }
-
-
+@media (max-width: 720px) {
     .links {
-        position: absolute !important;
-        top: 60px !important;
+        position: fixed;
+        top: 60px;
+        right: -100%;
         width: 60%;
-        height: 90vh;
-        right: 0;
-        justify-content: center;
-        transform: translateX(-30%);
-
-        gap: 40px;
         text-decoration: underline;
-        background-color: rgb(191, 186, 195) !important;
+        height: 100vh;
+        background-color: rgb(191, 186, 195);
         flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        font-size: 23px;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .links.show {
+        transform: translateX(-130%);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close.hidden {
+        display: none;
+    }
+
+    .hamburger.hidden {
+        display: none;
+    }
+
+    .close {
+        display: block;
     }
 }
