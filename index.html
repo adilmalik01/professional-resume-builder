@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Enhance Cv</h1>
+        </div>
+        <div class="links hide">
+            <h3>Home</h3>
+            <h3>Resume</h3>
+            <h3>Cover Letter</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+        <h1 class="hidden hamburger"><i class="bi bi-list"></i></h1>
+    </nav>
+
+
+
+
+    <script>
+        let btn = document.querySelector(".hamburger");
+        let div = document.querySelector(".links");
+
+        btn.addEventListener("click", () => {
+            div.classList.toggle("hide");
+        });
+    </script>
+</body> 
+
+</html>
