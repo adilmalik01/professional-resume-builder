@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-Resume</title>
+    <link rel="stylesheet" href="../assests/css/navbar.css">
+    <link rel="stylesheet" href="../assests/css/create-resume.css">
+    <style>
+        .heading {
+            margin: 30px;
+            padding: 30px 20px;
+        }
+
+        .heading {
+            font-size: 1.5vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(68, 68, 68);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">
+            <h1>Elevate CV</h1>
+        </div>
+        <div class="links">
+            <h3><a href="../index.html">Home</a></h3>
+            <h3><a href="./resumes.html">Resume</a></h3>
+            <h3><a href="./about.html">About</a></h3>
+            <h3><a href="./contact.html">Contact</a></h3>
+        </div>
+        <h1 class="hamburger"><i class="bi bi-list"></i></h1>
+        <h1 class="close hidden"><i class="bi bi-x-lg"></i></h1>
+    </nav>
+
+
+    <div class="heading">
+        <h1>Build your Resume </h1>
+    </div>
+
+    <div class="mainDiv">
+        <form>
+            <div class="headline">
+                <h2>About Me</h2>
+            </div>
+
+            <!-- Image File Input -->
+            <div class="input-label">
+                <label for="profileImage">Upload Profile Picture</label>
+                <input type="file" id="profileImage" accept="image/*">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-group">
+                <div class="input-label">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName">
+                    <span class="error-message"></span>
+
+                </div>
+                <div class="input-label">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="input-label">
+                <label for="designation">Designation</label>
+                <input class="input" id="designation" type="text">
+                <span class="error-message"></span>
+
+            </div>
+
+            <div class="textarea-label">
+                <div style="text-align: start; width: 92%;">
+                    <label for="yourself">Yourself</label>
+                </div>
+                <textarea id="yourself"></textarea>
+                <span class="error-message"></span>
+            </div>
+
+            <div class="headline">
+                <h2>Contact Info</h2>
+            </div>
+
+            <div class="input-label">
+                <label for="phoneNumber">Mobile Number</label>
+                <input class="input" id="phoneNumber" type="text">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-label">
+                <label for="email">Email</label>
+                <input class="input" id="email" type="email">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-label">
+                <label for="linkedin">LinkedIn</label>
+                <input class="input" id="linkedin" type="text">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-label">
+                <label for="address">Address</label>
+                <input class="input" id="address" type="text">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="headline">
+                <h2>Education</h2>
+            </div>
+            <div class="education-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="edu-year-1">Education Year</label>
+                        <input type="text" id="edu-year-1" placeholder="e.g., 2020 - 2024">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-degree-1">Degree</label>
+                        <input type="text" id="edu-degree-1" placeholder="e.g., Bachelor of Science">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-institute-1">Institute</label>
+                        <input type="text" id="edu-institute-1" placeholder="e.g., University Name">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="edu-year-2">Education Year</label>
+                        <input type="text" id="edu-year-2" placeholder="e.g., 2016 - 2020">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-degree-2">Degree</label>
+                        <input type="text" id="edu-degree-2" placeholder="e.g., High School Diploma">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="edu-institute-2">Institute</label>
+                        <input type="text" id="edu-institute-2" placeholder="e.g., School Name">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headline">
+                <h2>Languages</h2>
+            </div>
+
+            <div class="language-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="language-1">Language</label>
+                        <input type="text" id="language-1" placeholder="e.g., English">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="proficiency-1">Proficiency (%)</label>
+                        <input type="number" id="proficiency-1" placeholder="e.g., 80" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="language-2">Language</label>
+                        <input type="text" id="language-2" placeholder="e.g., Urdu">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="proficiency-2">Proficiency (%)</label>
+                        <input type="number" id="proficiency-2" placeholder="e.g., 70" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headline">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="experience-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-1">Job Title</label>
+                        <input type="text" id="job-title-1" placeholder="e.g., Software Engineer">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-1">Company & Description</label>
+                        <input type="text" id="company-desc-1" placeholder="e.g., ABC Corp - Description">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-1">Years</label>
+                        <input type="text" id="years-1" placeholder="e.g., 2019-2022">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-2">Job Title</label>
+                        <input type="text" id="job-title-2" placeholder="e.g., Frontend Developer">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-2">Company & Description</label>
+                        <input type="text" id="company-desc-2" placeholder="e.g., XYZ Ltd - Description">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-2">Years</label>
+                        <input type="text" id="years-2" placeholder="e.g., 2017-2019">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="job-title-3">Job Title</label>
+                        <input type="text" id="job-title-3" placeholder="e.g., Intern">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="company-desc-3">Company & Description</label>
+                        <input type="text" id="company-desc-3" placeholder="e.g., DEF Inc - Description">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="years-3">Years</label>
+                        <input type="text" id="years-3" placeholder="e.g., 2016-2017">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="headline">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-section">
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-1">Skill</label>
+                        <input type="text" id="skill-1" placeholder="e.g., JavaScript">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-1">Proficiency (%)</label>
+                        <input type="number" id="skill-level-1" placeholder="e.g., 90" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-2">Skill</label>
+                        <input type="text" id="skill-2" placeholder="e.g., React">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-2">Proficiency (%)</label>
+                        <input type="number" id="skill-level-2" placeholder="e.g., 85" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-3">Skill</label>
+                        <input type="text" id="skill-3" placeholder="e.g., Node.js">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-3">Proficiency (%)</label>
+                        <input type="number" id="skill-level-3" placeholder="e.g., 80" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-4">Skill</label>
+                        <input type="text" id="skill-4" placeholder="e.g., Python">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-4">Proficiency (%)</label>
+                        <input type="number" id="skill-level-4" placeholder="e.g., 75" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="skill-5">Skill</label>
+                        <input type="text" id="skill-5" placeholder="e.g., Python">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-label">
+                        <label for="skill-level-5">Proficiency (%)</label>
+                        <input type="number" id="skill-level-5" placeholder="e.g., 75" min="0" max="100">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-div">
+                <button type="submit">Generate Resume</button>
+                <a id="check-resume" href="./my-resume.html">Check Resume</a>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+    <script src="../dist/create-resume.js"></script>
+</body>
+
+</html>

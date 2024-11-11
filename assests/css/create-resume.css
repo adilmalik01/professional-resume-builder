@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav {
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #2563eb;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem 0;
+}
+
+.heading h1 {
+    color: #1f2937;
+    font-size: 2rem;
+}
+
+.mainDiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.headline {
+    margin: 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.headline h2 {
+    color: #2563eb;
+    font-size: 1.25rem;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+textarea{
+    width: 100%;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="file"] {
+    padding: 0.5rem;
+    border: 2px dashed #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: #2563eb;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+#check-resume{
+    background-color: #2563eb;
+    color: white !important;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 2rem;
+}
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainDiv {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+}
+
+
+
+
+input[type="number"] {
+    width: 100%;
+}
+
+.education-section,
+.experience-section,
+.skills-section,
+.language-section {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.input-group:hover {
+    background: #f8fafc;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
